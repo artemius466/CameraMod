@@ -6,8 +6,8 @@ namespace CameraMod.Camera.Patches {
     [Description(PluginInfo.Description)]
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class HarmonyPatches : BaseUnityPlugin {
-        public void Start() {
-            Console.Title = $"{PluginInfo.Name} // Build " + PluginInfo.Version;
+        public void Start() { //wth is that bro
+            //Console.Title = $"{PluginInfo.Name} // Build " + PluginInfo.Version;
         }
 
         public void OnEnable() {

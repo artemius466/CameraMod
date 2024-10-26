@@ -7,12 +7,12 @@
         <DebugType>Full</DebugType>
     </PropertyGroup>
     <ItemGroup>
-        <None Remove="Camera\Assets\colorscreen"/>
-        <None Remove="Camera\Assets\yizzicam"/>
+        <None Remove="Camera\Assets\colorscreen" />
+        <None Remove="Camera\Assets\yizzicam" />
     </ItemGroup>
     <ItemGroup>
-        <EmbeddedResource Include="Camera\Assets\colorscreen"/>
-        <EmbeddedResource Include="Camera\Assets\yizzicam"/>
+        <EmbeddedResource Include="Camera\Assets\colorscreen" />
+        <EmbeddedResource Include="Camera\Assets\yizzicam" />
     </ItemGroup>
     <ItemGroup>
 
@@ -58,13 +58,6 @@
         <Reference Include="Mono.Security">
             <HintPath>$(GameAssemblyPath)\Mono.Security.dll</HintPath>
         </Reference>
-        <Reference Include="NAudio.Core">
-            <HintPath>$(PluginsPath)\NAudio.Core.dll</HintPath>
-        </Reference>
-
-        <Reference Include="NAudio.Midi">
-            <HintPath>$(PluginsPath)\NAudio.Midi.dll</HintPath>
-        </Reference>
         <Reference Include="Newtonsoft.Json">
             <HintPath>$(GameAssemblyPath)\Newtonsoft.Json.dll</HintPath>
         </Reference>
@@ -103,9 +96,6 @@
         </Reference>
         <Reference Include="PlayFab">
             <HintPath>$(GameAssemblyPath)\PlayFab.dll</HintPath>
-        </Reference>
-        <Reference Include="PokrukMenu">
-            <HintPath>D:\Games\Software\another-axiom-gorilla-tag\BepInEx\plugins\PokrukMenu\PokrukMenu.dll</HintPath>
         </Reference>
         <Reference Include="System.EnterpriseServices">
             <HintPath>$(GameAssemblyPath)\System.EnterpriseServices.dll</HintPath>
@@ -325,6 +315,6 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Remove="Menu\ButtonCategories\IButtonsCategory.cs"/>
+        <Compile Remove="Menu\ButtonCategories\IButtonsCategory.cs" />
     </ItemGroup>
 </Project>

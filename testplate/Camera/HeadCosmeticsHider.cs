@@ -21,7 +21,7 @@ namespace CameraMod.Camera {
                 } else if (item.itemCategory == CosmeticCategory.Hat) {
                     slotType = CosmeticSlots.Hat;
                 } else {
-                    Debug.Log("Lol why is this here");
+                    Debug.Log("Lol why is this here"); // lol delete ur debugs
                     continue;
                 }
 
