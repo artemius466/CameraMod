@@ -7,8 +7,8 @@
         <DebugType>Full</DebugType>
     </PropertyGroup>
     <ItemGroup>
-        <None Remove="Camera\Assets\colorscreen"/>
-        <EmbeddedResource Include="Camera\Assets\colorscreen"/>
+        <None Remove="Camera\Assets\colorscreen" />
+        <EmbeddedResource Include="Camera\Assets\colorscreen" />
         <None Remove="Camera\Assets\pokrukcam" />
         <EmbeddedResource Include="Camera\Assets\pokrukcam" />
     </ItemGroup>
@@ -86,9 +86,6 @@
         <Reference Include="PlayFab">
             <HintPath>$(GameAssemblyPath)\PlayFab.dll</HintPath>
         </Reference>
-        <Reference Include="PokrukMenu">
-            <HintPath>D:\Games\Software\another-axiom-gorilla-tag\BepInEx\plugins\PokrukMenu\PokrukMenu.dll</HintPath>
-        </Reference>
         <Reference Include="System.EnterpriseServices">
             <HintPath>$(GameAssemblyPath)\System.EnterpriseServices.dll</HintPath>
         </Reference>
@@ -111,7 +108,7 @@
             <HintPath>$(GameAssemblyPath)\Unity.Mathematics.dll</HintPath>
         </Reference>
         <Reference Include="Unity.TextMeshPro">
-            <HintPath>D:\Games\Software\another-axiom-gorilla-tag\Gorilla Tag_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+            <HintPath>$(GameAssemblyPath)\Unity.TextMeshPro.dll</HintPath>
         </Reference>
         <Reference Include="Unity.Timeline">
             <HintPath>$(GameAssemblyPath)\Unity.Timeline.dll</HintPath>
@@ -307,6 +304,6 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Remove="Menu\ButtonCategories\IButtonsCategory.cs"/>
+        <Compile Remove="Menu\ButtonCategories\IButtonsCategory.cs" />
     </ItemGroup>
 </Project>

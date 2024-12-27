@@ -5,12 +5,7 @@
             <PluginPath>$(PluginsPath)\$(TargetName)</PluginPath>
         </PropertyGroup>
         <MakeDir Directories="$(PluginPath)"/>
-
         <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(PluginPath)\$(TargetFileName)"/>
-
-        <Copy SourceFiles="$(TargetDir)\$(TargetName).pdb" DestinationFiles="$(PluginPath)\$(TargetName).pdb"/>
-        <Exec Command='"C:\Users\Pokruk\Downloads\pdb2mdb.exe" "$(PluginPath)\$(TargetFileName)"'/>
-
         <Message Text="Copied to Plugins" Importance="high"/>
     </Target>
 </Project>

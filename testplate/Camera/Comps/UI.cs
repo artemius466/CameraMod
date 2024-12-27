@@ -61,25 +61,14 @@ namespace CameraMod.Camera.Comps {
             beachthing = GameObject.Find("Environment Objects/LocalObjects_Prefab/ForestToBeach");
             basement = GameObject.Find("Environment Objects/LocalObjects_Prefab/Basement");
             citybuildings = GameObject.Find("Environment Objects/LocalObjects_Prefab/City/CosmeticsRoomAnchor/rain");
-            
-            StartCoroutine(FetchWatermarkDeleteUserids());
         }
-        
-        IEnumerator FetchWatermarkDeleteUserids() {
-            UnityWebRequest request = UnityWebRequest.Get("https://pastebin.com/raw/EHB6SJnz");
-            yield return request.SendWebRequest();
-            if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError) {
-                Debug.LogError("FetchWatermarkDeleteUserids filed: " + request.error);
-            } else {
-                var whitelistIds = request.downloadHandler.text.Split(Environment.NewLine);
-
-                while (PhotonNetwork.LocalPlayer.UserId == null) {
-                    yield return new WaitForSeconds(1);
-                }
-                watermarkEnabled = !whitelistIds.Contains(PhotonNetwork.LocalPlayer.UserId);
-            }
+        bool сигмакрипер = false;
+        IEnumerator крякнутьпокрука()
+        {
+            сигмакрипер = true;
+            yield return new WaitForSecondsRealtime(5f);
+            сигмакрипер = false;
         }
-        
         private void LateUpdate() {
             Spec();
             Freecam();
@@ -97,7 +86,7 @@ namespace CameraMod.Camera.Comps {
             style.normal.textColor = Color.white;
             
             Rect labelRect = new Rect(x, y, width, height);
-            GUI.Label(labelRect, "Pokruk's Camera Mod", style);
+            GUI.Label(labelRect, "thx", style);
         }
 
         public bool IsSpecMode() {
@@ -109,14 +98,10 @@ namespace CameraMod.Camera.Comps {
             CameraController.Instance.tpv = false;
         }
         
-        public bool watermarkEnabled = false;
         private void OnGUI() {
-            if (watermarkEnabled) {
-                WaterMark();
-            }
             
             if (uiopen) {
-                GUI.Box(new Rect(30f, 50f, 170f, 294f), "Pokruk's Camera Mod");
+                GUI.Box(new Rect(30f, 50f, 170f, 294f), "Thank u 4 using crack >o<");
                 if (GUI.Button(new Rect(35f, 70f, 160f, 20f), freecam ? "FirstPersonView" : "FreeCam")) {
                     if (!freecam) {
                         if (spectating) {
