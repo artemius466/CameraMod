@@ -4,4 +4,4 @@ idfk how this shit works
 
 idk why u should download this
 
-i didnt test shit
+btw i tested it kinda worksssss
